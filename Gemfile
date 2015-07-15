@@ -9,10 +9,9 @@ gem 'pg'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
 gem 'will_paginate', '~> 3.0.7'
-
 gem 'simple_form'
+gem 'devise', '>= 3.2.4'
 
 gem 'sprockets', '<= 2.11.0'
 
