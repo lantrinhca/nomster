@@ -9,10 +9,10 @@
 		  <script>
 				function initialize() {
 				  var myLatlng = new google.maps.LatLng(<%= @place.latitude %>, <%= @place.longitude %>);
-					var mapOptions = {
+	        var mapOptions = {
 				    zoom: 12,
 				    center: myLatlng
-				  }
+			  }
 				  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 				  var marker = new google.maps.Marker({
@@ -34,3 +34,10 @@
     	<% end %>
   </div>
 </div>
+
+<div class="clear"></div>
+<%= simple_form_for @comment, :url => '#' do |f| %>
+	<%= f.input :message %>
+	<%= f.input :rating %>
+	<%= f.submit "Add a Comment", :class => 'btn button-primary' %>
+<% end %>
