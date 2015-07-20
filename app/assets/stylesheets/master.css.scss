@@ -66,3 +66,21 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 2;
+   
+  -webkit-column-count: 1;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    1;
+  -moz-column-gap:      0px;
+  column-count:         1;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
