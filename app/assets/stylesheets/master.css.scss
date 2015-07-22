@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  margin-top: 60px;
 	background: url('/assets/crossword.png');
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
@@ -70,13 +71,13 @@ blockquote p {
 #photos {
   /* Prevent vertical gaps */
   line-height: 2;
-   
+
   -webkit-column-count: 1;
   -webkit-column-gap:   0px;
   -moz-column-count:    1;
   -moz-column-gap:      0px;
   column-count:         1;
-  column-gap:           0px;  
+  column-gap:           0px;
 }
 
 #photos img {
