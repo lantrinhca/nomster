@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  margin-top: 60px;
+  // margin-top: 60px;
 	background: url('/assets/crossword.png');
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
@@ -26,6 +26,7 @@ body {
 	background-image: url('/assets/cartographer.png');
 	border-radius: 0;
 	box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -84,4 +85,25 @@ blockquote p {
   /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  height: 550px;
+  // height: auto !important;
+  width: 100%;
+}
+
+.carousel-caption {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0,0.95) 2px 2px;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
