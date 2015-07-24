@@ -52,8 +52,6 @@ class PlacesController < ApplicationController
   	end
 
   	@place.destroy
-    @place.comments.destroy
-    @place.photos.destroy
   	redirect_to root_path
   end
 
