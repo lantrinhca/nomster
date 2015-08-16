@@ -11,20 +11,20 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require bootstrap-sprockets
+//= require jquery_ujs
 //= require fancybox
 //= require_tree .
-$(document).ready(function() {
-  // $("a.fancybox").fancybox();
-  $("a#single_image").fancybox();
-});
+// $(document).ready(function() {
+//   // $("a.fancybox").fancybox();
+//   $("a#single_image").fancybox();
+// });
 
-With the element initially shown, we can hide it slowly:
-$(document).ready(function(){
-	$("#map").click(function() {
-	  $( "#indexbox" ).hide( "slow", function() {
-	  });
-	});
-});
+// With the element initially shown, we can hide it slowly:
+// $(document).ready(function(){
+// 	$("#map").click(function() {
+// 	  $( "#indexbox" ).hide( "slow", function() {
+// 	  });
+// 	});
+// });
 
