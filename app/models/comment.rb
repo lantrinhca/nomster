@@ -1,8 +1,8 @@
 class Comment < ActiveRecord::Base
 	belongs_to :user
 	belongs_to :place
-	after_create :send_comment_email
 
+	after_create :send_comment_email
 	validates :message, :presence => true
 	validates :rating, :presence => true
 
